@@ -1,0 +1,15 @@
+{
+	"name": "adithyadf3",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a69771db-06ed-48ed-b3b4-b84de885268b",
+		"tenantId": "1b377357-c979-4d6e-b297-81f625638dcd"
+	}
+}
