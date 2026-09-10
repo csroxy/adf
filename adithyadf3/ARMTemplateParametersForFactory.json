@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adithyadf3"
+		},
+		"ls_covidzip_adls_accountKey": {
+			"value": ""
+		},
+		"ls_covidzip_adls_properties_typeProperties_url": {
+			"value": "https://adithyasa.dfs.core.windows.net/"
+		}
+	}
+}
