@@ -107,7 +107,14 @@
 					{
 						"name": "Copy population data",
 						"type": "Copy",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Check file exist",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.00:10:00",
 							"retry": 0,
@@ -163,6 +170,24 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "Check file exist",
+						"type": "Validation",
+						"dependsOn": [],
+						"userProperties": [
+							{}
+						],
+						"typeProperties": {
+							"dataset": {
+								"referenceName": "ds_adls_raw_zip",
+								"type": "DatasetReference",
+								"parameters": {}
+							},
+							"timeout": "0.00:03:00",
+							"sleep": 90,
+							"minimumSize": 1024
+						}
 					}
 				],
 				"concurrency": 1,
