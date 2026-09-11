@@ -53,6 +53,7 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": "population_tsv",
+						"folderPath": "pipeline",
 						"fileSystem": "raw"
 					},
 					"columnDelimiter": "\t",
