@@ -76,7 +76,7 @@
 						"referenceName": "ds_adls_raw_zip",
 						"type": "DatasetReference"
 					},
-					"timeout": "0.10:10:00",
+					"timeout": "0.00:02:00",
 					"sleep": 20,
 					"minimumSize": 1024
 				}
