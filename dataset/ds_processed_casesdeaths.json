@@ -1,7 +1,6 @@
 {
-	"name": "ds_adls_raw_zip",
+	"name": "ds_processed_casesdeaths",
 	"properties": {
-		"description": "Raw Zip Data",
 		"linkedServiceName": {
 			"referenceName": "ls_covidzip_adls",
 			"type": "LinkedServiceReference"
@@ -11,17 +10,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "population_by_age.tsv.gz",
-				"fileSystem": "raw"
+				"folderPath": "ecdc/cases_deaths",
+				"fileSystem": "processed"
 			},
-			"columnDelimiter": "\t",
-			"compressionCodec": "gzip",
-			"compressionLevel": "Optimal",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
