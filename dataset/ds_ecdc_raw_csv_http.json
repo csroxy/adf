@@ -1,0 +1,31 @@
+{
+	"name": "ds_ecdc_raw_csv_http",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_opendata_ecdc_eu",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"RelativeURL": {
+				"type": "string",
+				"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/cases_deaths.csv"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().RelativeURL",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
