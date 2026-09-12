@@ -15,6 +15,10 @@
 			"type": "string",
 			"defaultValue": "https://adithyasa.dfs.core.windows.net/"
 		},
+		"ls_http_opendata_ecdc_eu_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://github.com"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +51,9 @@
 					},
 					"ls_covidzip_adls_properties_typeProperties_url": {
 						"value": "[parameters('ls_covidzip_adls_properties_typeProperties_url')]"
+					},
+					"ls_http_opendata_ecdc_eu_properties_typeProperties_url": {
+						"value": "[parameters('ls_http_opendata_ecdc_eu_properties_typeProperties_url')]"
 					}
 				}
 			},

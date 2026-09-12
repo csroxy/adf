@@ -11,6 +11,9 @@
 		"ls_covidzip_adls_properties_typeProperties_url": {
 			"value": "https://adithyasa.dfs.core.windows.net/"
 		},
+		"ls_http_opendata_ecdc_eu_properties_typeProperties_url": {
+			"value": "https://github.com"
+		},
 		"containerUri": {
 			"value": ""
 		},
