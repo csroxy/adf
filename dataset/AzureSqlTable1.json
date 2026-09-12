@@ -46,7 +46,7 @@
 		],
 		"typeProperties": {
 			"schema": "covid_reporting",
-			"table": "hospital_admissions_daily"
+			"table": "cases_and_deaths"
 		}
 	}
 }
